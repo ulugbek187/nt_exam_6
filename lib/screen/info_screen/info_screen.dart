@@ -45,29 +45,67 @@ class _InfoScreenState extends State<InfoScreen> {
           SizedBox(
             height: 12.h,
           ),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+          //   children: [
+          //     Container(
+          //       height: 20.w,
+          //       color: Colors.white,
+          //     ),
+          //     Container(
+          //       height: 46.h,
+          //       width: 46.h,
+          //        decoration: const BoxDecoration(
+          //           color: AppColors.c70B458, shape: BoxShape.circle),
+          //       child: Center(
+          //         child: SizedBox(
+          //             width: 28.w,
+          //             height: 27.h,
+          //             child: SvgPicture.asset(
+          //               AppIcons.search,
+          //             )),
+          //       ),
+          //     ),//fg
+          //   ],
+          // ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Container(
-                height: 20.w,
-                color: Colors.white,
-              ),
-              Container(
-                height: 46.h,
-                width: 46.h,
-                 decoration: const BoxDecoration(
-                    color: AppColors.c70B458, shape: BoxShape.circle),
-                child: Center(
-                  child: SizedBox(
-                      width: 28.w,
-                      height: 27.h,
-                      child: SvgPicture.asset(
-                        AppIcons.search,
-                      )),
+              SizedBox(width: 20.w),
+              Expanded(
+                child: TextField(
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.all(10),
+                    fillColor: AppColors.white,
+                    filled: true,
+                    hintText: "EX) MILK BOTTLE",
+                    hintStyle: AppTextStyle.width500
+                        .copyWith(color: Colors.grey, fontSize: 25.w),
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide(color: AppColors.c70B458),
+                      borderRadius: BorderRadius.circular(40.w),
+                    ),
+                  ),
                 ),
-              )
+              ),
+              SizedBox(width: 10.w),
+              Container(
+                      height: 46.h,
+                      width: 46.h,
+                       decoration: const BoxDecoration(
+                          color: AppColors.c70B458, shape: BoxShape.circle),
+                      child: Center(
+                        child: SizedBox(
+                            width: 28.w,
+                            height: 27.h,
+                            child: SvgPicture.asset(
+                              AppIcons.search,
+                            )),
+                      ),
+                    ),
+              SizedBox(width: 20.w),
             ],
           ),
+
           SizedBox(
             height: 20.h,
           ),
