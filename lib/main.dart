@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:nt_exam_6/screen/tab_box/tab_box.dart';
 
 void main() async {
-  var user = User()..printCurrentName();
 
   WidgetsFlutterBinding.ensureInitialized();
   // await StorageRepository.init();

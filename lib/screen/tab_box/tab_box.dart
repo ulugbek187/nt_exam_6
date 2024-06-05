@@ -70,7 +70,7 @@ class _TabScreenState extends State<TabScreen> {
           ),
           BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                AppIcons.locatsion,
+                AppIcons.location,
                 height: 24.h,
                 width: 24.w,
                 colorFilter: const ColorFilter.mode(
@@ -79,7 +79,7 @@ class _TabScreenState extends State<TabScreen> {
                 ),
               ),
               activeIcon: SvgPicture.asset(
-                AppIcons.locatsion,
+                AppIcons.location,
                 height: 24.h,
                 width: 24.w,
                 colorFilter: const ColorFilter.mode(

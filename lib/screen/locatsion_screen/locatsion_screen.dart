@@ -15,7 +15,7 @@ class _LocatsionScreenState extends State<LocatsionScreen> {
       appBar: AppBar(backgroundColor: Colors.white,),
 
       body: ListView(
-        children: [
+        children: const [
           GlobalAppBarContainer(title: "BIN LOCATOR"),
         ],
       ),
